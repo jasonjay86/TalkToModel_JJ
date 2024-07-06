@@ -30,7 +30,7 @@ def numerical_filter(parse_text, temp_dataset, i, feature_name):
     """
     # Greater than or equal to
     if parse_text[i+2] == 'greater' and parse_text[i+3] == 'equal':
-        print(parse_text)
+        # print(parse_text)
         feature_value = float(parse_text[i+5])
         bools = temp_dataset['X'][feature_name] >= feature_value
         updated_dset = filter_dataset(temp_dataset, bools)

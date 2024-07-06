@@ -47,7 +47,7 @@ def compute_rank_stats(data, feature_name_to_rank):
     max_ranks = {}
     avg_ranks = {}
     ci_95s = {}
-    print(feature_name_to_rank)
+    # print(feature_name_to_rank)
     for feature_name in data.columns:
         # Get the ranks of each feature name
         rank_to_ids = feature_name_to_rank[feature_name]

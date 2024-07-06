@@ -96,7 +96,7 @@ def get_and_preprocess_german():
     for i, purpose in enumerate(unique_purposes):
         x_values["loanpurpose"+purpose] = new_cols[:, i]
 
-    print(len(x_values.columns))
+    # print(len(x_values.columns))
 
     x_values['Gender'] = [1 if v == "Male" else 0 for v in x_values['Gender'].values]
 
