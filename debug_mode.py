@@ -5,56 +5,50 @@ import sys
 
 import gin
 import numpy as np
-
-np.random.seed(0)
 # parent = dirname(dirname(abspath(__file__)))
 # sys.path.append(parent)
 
 from explain.logic import ExplainBot  # noqa: E402, F401
-from explain.conversation import fork_conversation  # noqa: E402, F401
+from explain.conversation import fork_conversation  # noqa: E402, 
+from explain.sample_prompts_by_action import sample_prompt_for_action
 
-CONFIG = "./tests/data/diabetes-config-debug.gin"
+def get_bot_response(BOT, user_text,action):
+    """Load the box response."""
+    prompt = sample_prompt_for_action(action,
+                                      BOT.prompts.filename_to_prompt_id,
+                                      BOT.prompts.final_prompt_set,
+                                      real_ids=BOT.conversation.get_training_data_ids())
+    print("generating the bot response")
+    try:
+        # data = json.loads(request.data)
+        # user_text = data["userInput"]
+        conversation = BOT.conversation
+        # print("retrieved convo")
+        response = BOT.update_state(user_text, conversation)
+        print("got response")
+    except Exception as ext:
+        # print(f"Traceback getting bot response: {traceback.format_exc()}")
+        print(f"Exception getting bot response: {ext}")
+        response = "Sorry! I couldn't understand that. Could you please try to rephrase?"
+    return response
+
+@gin.configurable
+class GlobalArgs:
+    def __init__(self, config, baseurl):
+        self.config = config
+        self.baseurl = baseurl
 
 
+# Parse gin global config
+gin.parse_config_file("global_config.gin")
 
-with open(CONFIG, "r") as gin_file:
-    gin_config = gin_file.read()
+# Get args
+args = GlobalArgs()
 
-cache_path =  "./cache"
-# mkdir(cache_path)
-gin_config = gin_config.replace("{prompt_cache}", cache_path)
-
-# Load formatted config
-gin.parse_config(gin_config)
+# Parse application level configs
+gin.parse_config_file(args.config)
 
 # Load the explainbot
 bot = ExplainBot()
-# Setup a conversation
-user_conversation = fork_conversation(bot.conversation, "testing")
-
-# To avoid querying API, setup desired outcome for the parse text
-def make_new_comp_parse_test_f(parse_text):
-    """Generates a function with the desired parse text."""
-    def overwrite_compute_parse_text(text):
-        del text
-        return None, parse_text
-    return overwrite_compute_parse_text
-
-desired_parse_text = "score accuracy test"
-bot.compute_parse_text = make_new_comp_parse_test_f(desired_parse_text)
-_ = bot.update_state("", user_conversation)
-
-# Add link to testing data
-gin.parse_config(gin_config)
-
-# Reload the explainbot
-bot = ExplainBot()
-# Setup a conversation
-user_conversation = fork_conversation(bot.conversation, "testing")
-
-bot.compute_parse_text = make_new_comp_parse_test_f(desired_parse_text)
-result = bot.update_state("", user_conversation)
-print(result)
-# score results are tested in test_dataset_description, assume they're correct here
-correct = "The model scores <em>83.333% accuracy</em>"
-# assert result.startswith(correct)
+objective = bot.conversation.describe.get_dataset_objective()
+print(get_bot_response(bot,"What are the least prominent features?","important"))

@@ -1,5 +1,6 @@
 # ExplainBot Params
-ExplainBot.parsing_model_name = "EleutherAI/gpt-neo-125M"
+# ExplainBot.parsing_model_name = "EleutherAI/gpt-neo-125m"
+ExplainBot.parsing_model_name = "openai-community/gpt2"
 ExplainBot.seed = 0
 
 ExplainBot.name = "diabetes-debug"

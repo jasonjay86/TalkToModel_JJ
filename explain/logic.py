@@ -420,7 +420,7 @@ class ExplainBot:
             return ''
 
         app.logger.info(f'USER INPUT: {text}')
-
+        # print(text)
         # Parse user input into text abiding by formal grammar
         if "t5" not in self.decoding_model_name:
             parse_tree, parsed_text = self.compute_parse_text(text)
@@ -430,7 +430,7 @@ class ExplainBot:
         # Run the action in the conversation corresponding to the formal grammar
         returned_item = run_action(
             user_session_conversation, parse_tree, parsed_text)
-
+        # print(returned_item)
         username = user_session_conversation.username
 
         response_id = self.gen_almost_surely_unique_id()

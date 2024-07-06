@@ -62,7 +62,7 @@ class Decoder:
         if no_init:
             return
 
-        if "gpt" in parsing_model_name:
+        if "gpt" or "flan" in parsing_model_name:
             from parsing.gpt.few_shot_inference import get_few_shot_predict_f
             predict_f = get_few_shot_predict_f(model=parsing_model_name,
                                                use_guided_decoding=self.use_guided_dec)
