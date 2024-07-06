@@ -1,6 +1,6 @@
 load_t5_params.model_name = "t5-3b"
 load_t5_params.regenerate_dataset = True
-load_t5_params.device = "cuda"
+load_t5_params.device = "cpu"
 # load_t5_params.seed = 0 for compas
 load_t5_params.seed = 90210
 
