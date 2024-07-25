@@ -9,6 +9,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
 # Loading + splitting the data
+datasetNm = ""
 data = pd.read_csv("./austrailian.csv", index_col=None)
 y = data.pop('A15')
 
