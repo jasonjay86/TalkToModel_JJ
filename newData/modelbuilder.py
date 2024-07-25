@@ -9,9 +9,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
 # Loading + splitting the data
-datasetNm = ""
-data = pd.read_csv("./austrailian.csv", index_col=None)
-y = data.pop('A15')
+datasetNm = "heart"
+data = pd.read_csv("./"+datasetNm+".csv", index_col=None)
+y = data.pop('A14')
 
 # I noticed that having class labels on a range besides 0 ==> N introduces some bugs because of the way certain explanation packages we use handle these labels...
 # I suggest adjusting them to start with 0. In general, we developed this project using binary classification tasks, so it's a bit better tested for this setting.
@@ -54,15 +54,15 @@ print(f"MLP Classifier Score: {mlp.score(X_test, y_test)}")
 
 import pickle as pkl
 X_train['y'] = y_train
-X_train.to_csv("./background_austrailian.csv")
+X_train.to_csv("./background_"+datasetNm+".csv")
 X_test['y'] = y_test
-X_test.to_csv("./dataset_austrailian.csv")
+X_test.to_csv("./dataset_"+datasetNm+".csv")
 
-with open("./austrailian_modelRF.pkl", "wb") as f:
+with open("./"+datasetNm+"_modelRF.pkl", "wb") as f:
     pkl.dump(rf_pipeline, f)
-with open("./austrailian_modelXG.pkl", "wb") as f:
+with open("./"+datasetNm+"_modelXG.pkl", "wb") as f:
     pkl.dump(xg, f)
-with open("./austrailian_modelLR.pkl", "wb") as f:
+with open("./"+datasetNm+"_modelLR.pkl", "wb") as f:
     pkl.dump(lr, f)
-with open("./austrailian_modelMLP.pkl", "wb") as f:
+with open("./"+datasetNm+"_modelMLP.pkl", "wb") as f:
     pkl.dump(mlp, f)
