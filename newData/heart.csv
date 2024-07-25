@@ -1,4 +1,4 @@
-Age,Sex,Chest Pain Type,resting blood pressure,serum cholestoral,fasting blood sugar > 120 mg/dl, resting electrocardiographic results,maximum heart rate achieved,exercise induced angina, oldpeak = ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment,number of major vessels colored by flourosopy,thal,A14
+Age,Sex,Chest_Pain_Type,resting_blood_pressure,serum_cholestoral,fasting_blood_sugar,_resting_electrocardiographic_results,maximum_heart_rate_achieved,exercise_induced_angina,_oldpeak,_the_slope_of_the_peak_exercise_ST_segment,number_of_major_vessels_colored_by_flourosopy,thal,A14
 70,1,4,130,322,0,2,109,0,2.4,2,3,3,2
 67,0,3,115,564,0,2,160,0,1.6,2,0,7,1
 57,1,2,124,261,0,0,141,0,0.3,1,0,7,2
