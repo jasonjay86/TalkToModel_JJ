@@ -9,9 +9,11 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
 # Loading + splitting the data
-datasetNm = "heart"
+datasetNm = "compas"
 data = pd.read_csv("./"+datasetNm+".csv", index_col=None)
-y = data.pop('A14')
+#Need to adjust y  vaule for different datasets
+y = data.pop('y')
+
 
 # I noticed that having class labels on a range besides 0 ==> N introduces some bugs because of the way certain explanation packages we use handle these labels...
 # I suggest adjusting them to start with 0. In general, we developed this project using binary classification tasks, so it's a bit better tested for this setting.
