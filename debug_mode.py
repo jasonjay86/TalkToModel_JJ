@@ -18,14 +18,14 @@ def get_bot_response(BOT, user_text,action):
                                       BOT.prompts.filename_to_prompt_id,
                                       BOT.prompts.final_prompt_set,
                                       real_ids=BOT.conversation.get_training_data_ids())
-    print("generating the bot response")
+    print(prompt)
     try:
         # data = json.loads(request.data)
         # user_text = data["userInput"]
         conversation = BOT.conversation
         # print("retrieved convo")
         response = BOT.update_state(user_text, conversation)
-        print("got response")
+        # print("got response")
     except Exception as ext:
         # print(f"Traceback getting bot response: {traceback.format_exc()}")
         print(f"Exception getting bot response: {ext}")
@@ -51,4 +51,11 @@ gin.parse_config_file(args.config)
 # Load the explainbot
 bot = ExplainBot()
 objective = bot.conversation.describe.get_dataset_objective()
-print(get_bot_response(bot,"What are the least prominent features?","important"))
+
+print("What records does the model predict incorrectly?")
+print(get_bot_response(bot,"What records does the model predict incorrectly?","mistake"))
+
+print("What are the most prominent features?")
+print(get_bot_response(bot,"What are the most prominent features?","important"))
+
+

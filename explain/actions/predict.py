@@ -20,13 +20,13 @@ def predict_operation(conversation, parse_text, i, max_num_preds_to_print=1, **k
     filter_string = gen_parse_op_text(conversation)
 
     if len(model_predictions) == 1:
-        return_s += f"The instance with <b>{filter_string}</b> is predicted "
+        return_s += f"The instance with {filter_string} is predicted "
         if conversation.class_names is None:
             prediction_class = str(model_predictions[0])
-            return_s += f"<b>{prediction_class}</b>"
+            return_s += f"{prediction_class}"
         else:
             class_text = conversation.class_names[model_predictions[0]]
-            return_s += f"<b>{class_text}</b>."
+            return_s += f"{class_text}."
     else:
         intro_text = get_parse_filter_text(conversation)
         return_s += f"{intro_text} the model predicts:"
@@ -38,11 +38,11 @@ def predict_operation(conversation, parse_text, i, max_num_preds_to_print=1, **k
             round_freq = str(round(freq * 100, conversation.rounding_precision))
 
             if conversation.class_names is None:
-                return_s += f"<b>class {uniq_p}</b>, {round_freq}%"
+                return_s += f"class {uniq_p}, {round_freq}%"
             else:
                 class_text = conversation.class_names[uniq_p]
-                return_s += f"<b>{class_text}</b>, {round_freq}%"
+                return_s += f"{class_text}, {round_freq}%"
             return_s += "</li>"
         return_s += "</ul>"
-    return_s += "<br>"
+    return_s += "\n"
     return return_s, 1

@@ -17,13 +17,13 @@ def count_data_points(conversation, parse_text, i, **kwargs):
     parse_op = gen_parse_op_text(conversation)
 
     if len(parse_op) > 0:
-        description_text = f" where <b>{parse_op}</b>"
+        description_text = f" where {parse_op}"
     else:
         description_text = ""
 
-    message = f"There are <b>{num_elements} items</b> in the data{description_text}."
+    message = f"There are {num_elements} items in the data{description_text}."
 
-    message += "<br><br>"
+    message += "\n\n"
     message += "Let me know if you want to see their ids."
     ids = list(data.index)
     rest_of_text = str(ids)

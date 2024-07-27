@@ -12,18 +12,18 @@ def get_text(interactions: list[tuple], feature_names: list, parse_op: str):
     """Gets the interaction text."""
 
     if len(parse_op) > 0:
-        filtering_text = f"For the model's predictions on instances instances where <b>{parse_op}</b>,"
+        filtering_text = f"For the model's predictions on instances instances where {parse_op},"
     else:
         filtering_text = "For the model's predictions on the data,"
 
     output = (f"{filtering_text} most significant feature interaction effects are as follows, "
-              "where <em>higher</em> values correspond to <em>greater</em> interactions.<br><br>")
+              "where higher values correspond to greater interactions.\n\n")
 
     for interaction in interactions:
         i, j, effect = interaction
         f1, f2 = feature_names[i], feature_names[j]
         effect = round(effect, 3)
-        this_interaction = f"<b>{f1}</b>+<b>{f2}</b>: {effect}<br>"
+        this_interaction = f"{f1}+{f2}: {effect}\n"
         output += this_interaction
 
     return output

@@ -126,7 +126,7 @@ def individual_feature_importance(avg_ranks,
 
     # Format the ranking
     if len(ids) > 1:
-        return_s += f" the {parsed_feature_name} feature is ranked on average <b>{presen_avg_ranking}</b> "
+        return_s += f" the {parsed_feature_name} feature is ranked on average {presen_avg_ranking} "
     else:
         return_s += f" the {parsed_feature_name} feature is ranked {presen_avg_ranking} "
 
@@ -147,11 +147,11 @@ def individual_feature_importance(avg_ranks,
         describe_imp = compute_quart_description(all_rankings, avg_ranking)
 
         if len(parse_op) == 0:
-            return_s += "<br><br>Compared to other instances in the data,"
+            return_s += "\n\nCompared to other instances in the data,"
         else:
             return_s += f" Compared to other instances where {parse_op},"
 
-        return_s += f" {parsed_feature_name} is a <b>{describe_imp} important feature</b>.<br><br>"
+        return_s += f" {parsed_feature_name} is a {describe_imp} important feature.\n\n"
 
     return_s += "\n\n"
 
@@ -162,14 +162,14 @@ def topk_feature_importance(avg_ranks, conversation, parse_op, return_s, topk):
 
     if topk == len(avg_ranks):
         return_s += (" the importance of the features have the following ranking, where 1 is the "
-                     "most important feature:<br><br>")
+                     "most important feature:\n\n")
     else:
-        return_s += (f" the <b>top {topk}</b> most important features are as follows, where 1 is the most "
-                     "important feature:<br><br>")
+        return_s += (f" the top {topk} most important features are as follows, where 1 is the most "
+                     "important feature:\n\n")
     avg_ranks = list((key, avg_ranks[key]) for key in avg_ranks)
     avg_ranks = sorted(avg_ranks, key=lambda x: x[1])
     for i in range(topk):
-        return_s += f"<b>{i+1}:</b> {avg_ranks[i][0]}<br>"
+        return_s += f"{i+1}: {avg_ranks[i][0]}\n"
     conversation.store_followup_desc("")
     return return_s
 
@@ -216,9 +216,9 @@ def important_operation(conversation, parse_text, i, **kwargs):
     # Start formatting response into a string
     if len(parse_op) == 0:
         # In the case that no filtering operations have been applied
-        return_s = "For the model's predictions across <b>all</b> the data,"
+        return_s = "For the model's predictions across all the data,"
     else:
-        return_s = f"For the model's predictions on instance with <b>{parse_op}</b>,"
+        return_s = f"For the model's predictions on instance with {parse_op},"
 
     # Cases for showing all the most important features, topk most important or importance of an
     # individual feature

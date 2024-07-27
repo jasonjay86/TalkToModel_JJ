@@ -22,8 +22,8 @@ def one_mistake(y_true, y_pred, conversation, intro_text):
     else:
         correct_text = "incorrect"
 
-    return_string = (f"{intro_text} the model predicts <em>{predict_text}</em> and the ground"
-                     f" label is <em>{label_text}</em>, so the model is <b>{correct_text}</b>!")
+    return_string = (f"{intro_text} the model predicts {predict_text} and the ground"
+                     f" label is {label_text}, so the model is {correct_text}!")
     return return_string
 
 
@@ -39,7 +39,7 @@ def sample_mistakes(y_true, y_pred, conversation, intro_text, ids):
         error_rate = round(incorrect_num / total_num, conversation.rounding_precision)
         return_string = (f"{intro_text} the model is incorrect {incorrect_num} out of {total_num} "
                          f"times (error rate {error_rate}). Here are the ids of instances the model"
-                         f" predicts incorrectly:<br><br>{incorrect_data}")
+                         f" predicts incorrectly:\n\n{incorrect_data}")
 
     return return_string
 
@@ -70,9 +70,9 @@ def typical_mistakes(data, y_true, y_pred, conversation, intro_text, ids):
         if len(return_options) == 0:
             return "I couldn't find any patterns for mistakes the model typically makes."
 
-        return_string = f"{intro_text} the model typically predicts incorrect:<br><br>"
+        return_string = f"{intro_text} the model typically predicts incorrect:\n\n"
         for rule in return_options:
-            return_string += rule + "<br><br>"
+            return_string += rule + "\n\n"
 
     return return_string
 
@@ -97,14 +97,14 @@ def show_mistakes_operation(conversation, parse_text, i, n_features_to_show=floa
     intro_text = get_parse_filter_text(conversation)
 
     if len(y_true) == 0:
-        return "There are no instances in the data that meet this description.<br><br>", 0
+        return "There are no instances in the data that meet this description.\n\n", 0
 
     y_pred = model.predict(data)
     if np.sum(y_true == y_pred) == len(y_true):
         if len(y_true) == 1:
-            return f"{intro_text} the model predicts correctly!<br><br>", 1
+            return f"{intro_text} the model predicts correctly!\n\n", 1
         else:
-            return f"{intro_text} the model predicts correctly on all the instances in the data!<br><br>", 1
+            return f"{intro_text} the model predicts correctly on all the instances in the data!\n\n", 1
 
     if parse_text[i+1] == "sample":
         return_string = sample_mistakes(y_true,
@@ -122,5 +122,5 @@ def show_mistakes_operation(conversation, parse_text, i, n_features_to_show=floa
     else:
         raise NotImplementedError(f"No mistake type {parse_text[i+1]}")
 
-    return_string += "<br><br>"
+    return_string += "\n\n"
     return return_string, 1

@@ -22,14 +22,14 @@ def score_operation(conversation, parse_text, i, **kwargs):
 
     filter_string = gen_parse_op_text(conversation)
     if len(filter_string) <= 0:
-        data_name = "the <b>all</b> the data"
+        data_name = "the all the data"
     else:
-        data_name = f"the data where <b>{filter_string}</b>"
+        data_name = f"the data where {filter_string}"
     text = conversation.describe.get_score_text(y_true,
                                                 y_pred,
                                                 metric,
                                                 conversation.rounding_precision,
                                                 data_name)
 
-    text += "<br><br>"
+    text += "\n\n"
     return text, 1

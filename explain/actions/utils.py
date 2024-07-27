@@ -32,9 +32,9 @@ def get_parse_filter_text(conversation: Conversation):
     """Gets the starting parse text."""
     parse_op = gen_parse_op_text(conversation)
     if len(parse_op) > 0:
-        intro_text = f"For the data with <b>{parse_op}</b>,"
+        intro_text = f"For the data with {parse_op},"
     else:
-        intro_text = "For <b>all</b> the instances in the data,"
+        intro_text = "For all the instances in the data,"
     return intro_text
 
 
@@ -79,7 +79,7 @@ def get_rules(tree, feature_names, class_names):
         for p in path[:-1]:
             if rule != "if ":
                 rule += " and "
-            rule += "<b>" + str(p) + "</b>"
+            rule += "" + str(p) + ""
         rule += " then "
         if class_names is None:
             rule += "response: " + str(np.round(path[-1][0][0][0], 3))
@@ -88,8 +88,8 @@ def get_rules(tree, feature_names, class_names):
             largest = np.argmax(classes)
             if class_names[largest] == "incorrect":
                 incorrect_class = True
-            rule += f"then the model is incorrect <em>{np.round(100.0 * classes[largest] / np.sum(classes), 2)}%</em>"
-        rule += f" over <em>{path[-1][1]:,}</em> samples"
+            rule += f"then the model is incorrect {np.round(100.0 * classes[largest] / np.sum(classes), 2)}%"
+        rule += f" over {path[-1][1]:,} samples"
 
         if incorrect_class:
             rules += [rule]
