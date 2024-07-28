@@ -13,7 +13,7 @@ def read_and_format_data(filepath,
                          target_var_name,
                          cat_features,
                          num_features,
-                         remove_underscores=True) -> tuple[DataFrame,
+                         remove_underscores=False) -> tuple[DataFrame,
                                                            Series,
                                                            list[str],
                                                            list[str]]:

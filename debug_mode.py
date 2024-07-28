@@ -14,11 +14,11 @@ from explain.sample_prompts_by_action import sample_prompt_for_action
 
 def get_bot_response(BOT, user_text,action):
     """Load the box response."""
-    prompt = sample_prompt_for_action(action,
-                                      BOT.prompts.filename_to_prompt_id,
-                                      BOT.prompts.final_prompt_set,
-                                      real_ids=BOT.conversation.get_training_data_ids())
-    print(prompt)
+    sample_prompt_for_action(action,
+                            BOT.prompts.filename_to_prompt_id,
+                            BOT.prompts.final_prompt_set,
+                            real_ids=BOT.conversation.get_training_data_ids())
+    # print(prompt)
     try:
         # data = json.loads(request.data)
         # user_text = data["userInput"]
@@ -55,7 +55,7 @@ objective = bot.conversation.describe.get_dataset_objective()
 print("What records does the model predict incorrectly?")
 print(get_bot_response(bot,"What records does the model predict incorrectly?","mistake"))
 
-print("What are the most prominent features?")
-print(get_bot_response(bot,"What are the most prominent features?","important"))
+# print("What are the most prominent features?")
+# print(get_bot_response(bot,"What are the most prominent features?","important"))
 
 

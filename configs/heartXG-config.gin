@@ -30,7 +30,7 @@ ExplainBot.dataset_index_column = 0
 ExplainBot.target_variable_name = "y"
 ExplainBot.categorical_features = None
 ExplainBot.numerical_features = None
-ExplainBot.remove_underscores = True
+ExplainBot.remove_underscores = False
 
 # Few-shot settings
 ExplainBot.prompt_metric = "cosine"

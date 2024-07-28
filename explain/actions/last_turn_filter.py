@@ -32,12 +32,13 @@ def last_turn_filter(conversation, parse_text, i, **kwargs):
     # Now newest operation is first
     last_turn_operations = last_turn_conversation.get_last_parse()[::-1]
     most_recent_filter = get_most_recent_filter(last_turn_operations)
-
+    # print("Got most recent filter")
     # If previousoperation is None, we haven't found any filters
     # just pass and do it on all the data
     if most_recent_filter is None:
         return "", 1
 
+    # print("end of last turn method(for us)")
     # Remove the filter operations so that only the actions
     # like explanations or predictions will be run
     just_filter_op = {
@@ -81,5 +82,5 @@ def last_turn_filter(conversation, parse_text, i, **kwargs):
     # the interpretable parse text
     conversation.temp_dataset.contents = last_turn_conversation.temp_dataset.contents
     conversation.parse_operation = last_turn_conversation.parse_operation
-
+   
     return "", 1
