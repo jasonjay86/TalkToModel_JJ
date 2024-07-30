@@ -40,9 +40,9 @@ def run_action(conversation: Conversation,
 
     parsed_text = parsed_string.split(' ')
     is_or = False
-    # print("parsed string is", parsed_string)
+    print("parsed string is", parsed_string)
     for i, p_text in enumerate(parsed_text):
-       
+        print("before action run parsed text: ", i, " ", parsed_text[i])
         if parsed_text[i] in actions:
             action_return, action_status = actions[p_text](
                 conversation, parsed_text, i, is_or=is_or)

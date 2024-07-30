@@ -34,11 +34,13 @@ def gen_feature_name_to_rank_dict(data, explanations):
                 # also, lime will store the value for categorical features
                 # at the end of the explanation, i.e., race=0 or race=1
                 # so we need to check startswith
+                # print (tup[0], " vs ", feature_name)
                 if tup[0].startswith(feature_name):
                     add_to_dict_lists(rank, current_id, rank_to_ids)
                     # Feature name must appear once per explanation so we can break
                     break
         feature_name_to_rank[feature_name] = rank_to_ids
+    # print(feature_name_to_rank)
     return feature_name_to_rank
 
 
@@ -49,12 +51,14 @@ def compute_rank_stats(data, feature_name_to_rank):
     ci_95s = {}
     # print(feature_name_to_rank)
     for feature_name in data.columns:
+        # print(feature_name)
         # Get the ranks of each feature name
         rank_to_ids = feature_name_to_rank[feature_name]
 
         # If the feature isn't very important and never
         # ends up getting included
         if len(feature_name_to_rank[feature_name]) == 0:
+            print(feature_name," isn't very important")
             continue
 
         max_rank = sorted(rank_to_ids.keys())[0]
@@ -109,6 +113,7 @@ def individual_feature_importance(avg_ranks,
     # Get the ranking for the particular feature name
     avg_ranking = avg_ranks[parsed_feature_name]
 
+    print("Got avg ranking")
     # Format CI's for the feature name
     ci_95 = ci_95s[parsed_feature_name]
     if ci_95 is not None:
@@ -199,12 +204,14 @@ def important_operation(conversation, parse_text, i, **kwargs):
 
     # Get the explainer
     mega_explainer_exp = conversation.get_var('mega_explainer').contents
+    # print(mega_explainer_exp)
 
     # If there's ids to regenerate from a previous operation, i.e., by changing the feature values
     regen = conversation.temp_dataset.contents['ids_to_regenerate']
 
     # Get the explanations
     explanations = mega_explainer_exp.get_explanations(ids, data, ids_to_regenerate=regen)
+    # print(explanations)
 
     # Generate feature name to frequency of ids at rank mapping
     feature_name_to_rank = gen_feature_name_to_rank_dict(data, explanations)
@@ -233,6 +240,8 @@ def important_operation(conversation, parse_text, i, **kwargs):
         return_s = topk_feature_importance(avg_ranks, conversation, parse_op, return_s, topk)
     else:
         # Individual feature importance case
+        print("Did we make it here?")
+        print(avg_ranks)
         return_s = individual_feature_importance(avg_ranks,
                                                  conversation,
                                                  ci_95s,

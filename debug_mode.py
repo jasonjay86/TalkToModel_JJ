@@ -2,6 +2,7 @@
 from os import mkdir  # noqa: E402, F401
 from os.path import dirname, abspath, join  # noqa: E402, F401
 import sys
+import re
 
 import gin
 import numpy as np
@@ -18,13 +19,15 @@ def get_bot_response(BOT, user_text,action):
                             BOT.prompts.filename_to_prompt_id,
                             BOT.prompts.final_prompt_set,
                             real_ids=BOT.conversation.get_training_data_ids())
-    # print(prompt)
+    # print(BOT.conversation.get_training_data_ids())
     try:
         # data = json.loads(request.data)
         # user_text = data["userInput"]
         conversation = BOT.conversation
         # print("retrieved convo")
         response = BOT.update_state(user_text, conversation)
+        response = re.sub('<br>|<li>','\n', response)
+        response = re.sub('<...>|<..>|<.>','', response)
         # print("got response")
     except Exception as ext:
         # print(f"Traceback getting bot response: {traceback.format_exc()}")
@@ -51,11 +54,26 @@ gin.parse_config_file(args.config)
 # Load the explainbot
 bot = ExplainBot()
 objective = bot.conversation.describe.get_dataset_objective()
+sampleInstance = "189"
 
-print("What records does the model predict incorrectly?")
-print(get_bot_response(bot,"What records does the model predict incorrectly?","mistake"))
 
+# Question 1
+# print("What records does the model predict incorrectly?")
+# print(get_bot_response(bot,"What records does the model predict incorrectly?","important"))
+
+# Question 2
 # print("What are the most prominent features?")
 # print(get_bot_response(bot,"What are the most prominent features?","important"))
 
+# Question 3
+# print(""Why is instance " + sampleInstance  + " given this prediction?")
+# print(get_bot_response(bot,"Why is instance " + sampleInstance  + " given this prediction?","whatif"))
 
+
+# Question 4
+# print("What should instance " + sampleInstance  + " change for a different result?")
+# print(get_bot_response(bot,"What should instance " + sampleInstance  + " change for a different result?","whatif"))
+
+# Question 5
+# print("What should instance " + sampleInstance  + " change for a different result?")
+print(get_bot_response(bot,"Is thal used for predictions?","whatif"))

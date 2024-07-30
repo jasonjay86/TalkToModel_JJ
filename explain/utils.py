@@ -92,7 +92,7 @@ def get_numeric_categorical(data, threshold=0.95, top_n=10):
 
     This function uses the ratio of unique values to total values"""
     cat, num = [], []
-
+    # print("Are we categorizing?")
     for var in data.columns:
         # From https://stackoverflow.com/questions/35826912/
         # what-is-a-good-heuristic-to-detect-if-a-column-in-a-pandas-dataframe-is-categori
@@ -100,6 +100,10 @@ def get_numeric_categorical(data, threshold=0.95, top_n=10):
             cat.append(var)
         else:
             num.append(var)
+    # print("cat")
+    # print(cat)
+    # print("num")
+    # print(num)
     return cat, num
 
 

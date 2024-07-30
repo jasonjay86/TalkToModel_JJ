@@ -146,6 +146,7 @@ class Conversation:
             'ids_to_regenerate': []
         }
         var = Variable(name='dataset', contents=dataset, kind='dataset')
+        # print(dataset['cat'])
         self._store_var(var)
         return var
 
