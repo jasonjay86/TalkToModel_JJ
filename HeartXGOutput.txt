@@ -1,0 +1,65 @@
+Heart Data - XG Boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: number_of_major_vessels_colored_by_flourosopy
+2: Chest_Pain_Type
+3: Sex
+4: thal
+5: _oldpeak
+6: serum_cholestoral
+7: maximum_heart_rate_achieved
+8: _the_slope_of_the_peak_exercise_ST_segment
+9: exercise_induced_angina
+10: fasting_blood_sugar
+11: _resting_electrocardiographic_results
+12: Age
+13: resting_blood_pressure
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (resting_blood_pressure > 109.0) and (Age > 60.5) and (Age <= 68.5) then then the model is incorrect 60.0% over 15 samples
+
+if (resting_blood_pressure <= 109.0) and (Chest_Pain_Type > 2.5) then then the model is incorrect 100.0% over 6 samples
+
+if (resting_blood_pressure > 109.0) and (Age <= 60.5) and (serum_cholestoral <= 173.5) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 189 given this prediction?
+
+For instances with id equal to 189 predicted presence of heart disease:
+number_of_major_vessels_colored_by_flourosopy is the most important feature and has a positive influence on the predictions
+Sex is the second most important feature and has a positive influence on the predictions
+Chest_Pain_Type is the third most important feature and has a negative influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 189 change for a different result?
+
+For instances where id equal to 189, the original prediction is presence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you increase resting_blood_pressure to 177.0, the model will predict absence of heart disease.
+
+In addition, if you decrease _oldpeak to 2.4 and decrease number_of_major_vessels_colored_by_flourosopy to 0.0, the model will predict absence of heart disease.
+
+Further, if you increase resting_blood_pressure to 181.0, the model will predict absence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is age used for predictions?
+
+For the model's predictions across all the data, the Age feature is ranked on average 12.294 (95% CI [12.175, 12.413]). Here, rank 1 is the most important feature (out of 13 features).
+
+Compared to other instances in the data, Age is a not very important feature.
+
+
+
+

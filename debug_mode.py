@@ -54,10 +54,13 @@ gin.parse_config_file(args.config)
 # Load the explainbot
 bot = ExplainBot()
 objective = bot.conversation.describe.get_dataset_objective()
-sampleInstance = "189"
-sampleFeature = "age"
 
-print("Heart Data - Random Forest")
+##### This is the section to update per dataset
+sampleInstance = "672"
+sampleFeature = "A8"
+print("Austrailian Credit Data - Random Forest")
+############################
+
 print("-"*80)
 
 # Question 1
