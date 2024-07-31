@@ -4,7 +4,9 @@
 
 # Model + dataset configuration specific file
 # GlobalArgs.config = "./configs/heartXG-config.gin"
-GlobalArgs.config = "./configs/heartLR-config.gin"
+# GlobalArgs.config = "./configs/heartLR-config.gin"
+# GlobalArgs.config = "./configs/heartMLP-config.gin"
+GlobalArgs.config = "./configs/heartRF-config.gin"
 
 # Set the base url to host the demo, if needed
 GlobalArgs.baseurl = "/"

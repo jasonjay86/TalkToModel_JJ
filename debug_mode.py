@@ -57,29 +57,29 @@ objective = bot.conversation.describe.get_dataset_objective()
 sampleInstance = "189"
 sampleFeature = "age"
 
-print("Heart Data - Logistic Regression")
+print("Heart Data - Random Forest")
 print("-"*80)
 
 # Question 1
-print("What are the most prominent features?")
+print("What are the most prominent features?\n")
 print(get_bot_response(bot,"What are the most prominent features?","important"))
 
 print("-"*80)
 # Question 2
-print("What records does the model predict incorrectly?")
+print("What records does the model predict incorrectly?\n")
 print(get_bot_response(bot,"What records does the model predict incorrectly?","important"))
 
 print("-"*80)
 # Question 3
-print("Why is instance " + sampleInstance  + " given this prediction?")
+print("Why is instance " + sampleInstance  + " given this prediction?\n")
 print(get_bot_response(bot,"Why is instance " + sampleInstance  + " given this prediction?","whatif"))
 
 print("-"*80)
 # Question 4
-print("What should instance " + sampleInstance  + " change for a different result?")
+print("What should instance " + sampleInstance  + " change for a different result?\n")
 print(get_bot_response(bot,"What should instance " + sampleInstance  + " change for a different result?","whatif"))
 
 print("-"*80)
 # Question 5
-print("Is " + sampleFeature + " used for predictions?")
+print("Is " + sampleFeature + " used for predictions?\n")
 print(get_bot_response(bot,"Is " + sampleFeature + " used for predictions?","whatif"))

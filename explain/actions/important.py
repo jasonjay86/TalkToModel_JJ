@@ -113,7 +113,7 @@ def individual_feature_importance(avg_ranks,
     # Get the ranking for the particular feature name
     avg_ranking = avg_ranks[parsed_feature_name]
 
-    print("Got avg ranking")
+    # print("Got avg ranking")
     # Format CI's for the feature name
     ci_95 = ci_95s[parsed_feature_name]
     if ci_95 is not None:

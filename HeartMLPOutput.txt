@@ -1,0 +1,110 @@
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 1 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 1 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 6 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 5 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 7 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 3 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 6 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 9 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 8 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 1 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 7 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 8 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 4 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 9 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 9 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 7 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+No Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Only 2 (required 10)  Diverse Counterfactuals found for the given configuration, perhaps try with different parameters... ; total time taken: 00 min 00 sec
+Heart Data - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: resting_blood_pressure
+2: maximum_heart_rate_achieved
+3: Chest_Pain_Type
+4: fasting_blood_sugar
+5: number_of_major_vessels_colored_by_flourosopy
+6: _resting_electrocardiographic_results
+7: exercise_induced_angina
+8: thal
+9: _the_slope_of_the_peak_exercise_ST_segment
+10: Sex
+11: Age
+12: serum_cholestoral
+13: _oldpeak
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (thal > 4.5) and (serum_cholestoral > 244.5) and (resting_blood_pressure > 119.0) then then the model is incorrect 100.0% over 15 samples
+
+if (thal > 4.5) and (serum_cholestoral <= 244.5) and (number_of_major_vessels_colored_by_flourosopy > 0.5) then then the model is incorrect 83.33% over 6 samples
+
+if (thal <= 4.5) and (resting_blood_pressure > 156.0) then then the model is incorrect 100.0% over 2 samples
+
+if (thal <= 4.5) and (resting_blood_pressure <= 156.0) and (maximum_heart_rate_achieved <= 93.5) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 189 given this prediction?
+
+For instances with id equal to 189 predicted absence of heart disease:
+resting_blood_pressure is the most important feature and has a negative influence on the predictions
+maximum_heart_rate_achieved is the second most important feature and has a positive influence on the predictions
+number_of_major_vessels_colored_by_flourosopy is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 189 change for a different result?
+
+Exception getting bot response: 'NoneType' object has no attribute 'index'
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Is age used for predictions?
+
+For the model's predictions across all the data, the Age feature is ranked on average 9.25 (95% CI [8.645, 9.855]). Here, rank 1 is the most important feature (out of 13 features).
+
+Compared to other instances in the data, Age is a not very important feature.
+
+
+
+

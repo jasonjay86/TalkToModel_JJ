@@ -1,0 +1,67 @@
+Heart Data - Random Forest
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: Chest_Pain_Type
+2: number_of_major_vessels_colored_by_flourosopy
+3: thal
+4: Sex
+5: _the_slope_of_the_peak_exercise_ST_segment
+6: _oldpeak
+7: exercise_induced_angina
+8: maximum_heart_rate_achieved
+9: serum_cholestoral
+10: Age
+11: _resting_electrocardiographic_results
+12: fasting_blood_sugar
+13: resting_blood_pressure
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (resting_blood_pressure <= 113.5) and (serum_cholestoral <= 234.0) and (serum_cholestoral > 203.0) then then the model is incorrect 100.0% over 5 samples
+
+if (resting_blood_pressure > 113.5) and (resting_blood_pressure > 186.0) then then the model is incorrect 100.0% over 1 samples
+
+if (resting_blood_pressure <= 113.5) and (serum_cholestoral > 234.0) and (thal > 5.0) and (Chest_Pain_Type <= 3.5) then then the model is incorrect 100.0% over 1 samples
+
+if (resting_blood_pressure <= 113.5) and (serum_cholestoral <= 234.0) and (serum_cholestoral <= 203.0) and (thal > 5.0) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 189 given this prediction?
+
+For instances with id equal to 189 predicted presence of heart disease:
+thal is the most important feature and has a positive influence on the predictions
+Chest_Pain_Type is the second most important feature and has a negative influence on the predictions
+number_of_major_vessels_colored_by_flourosopy is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 189 change for a different result?
+
+For instances where id equal to 189, the original prediction is presence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you decrease exercise_induced_angina to 0.0 and decrease _the_slope_of_the_peak_exercise_ST_segment to 1.0 and decrease thal to 3.0, the model will predict absence of heart disease.
+
+In addition, if you decrease Sex to 0.0 and decrease serum_cholestoral to 182.0, the model will predict absence of heart disease.
+
+Furthermore, if you decrease Sex to 0.0 and decrease _oldpeak to 0.1, the model will predict absence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is age used for predictions?
+
+For the model's predictions across all the data, the Age feature is ranked on average 9.971 (95% CI [9.912, 10.029]). Here, rank 1 is the most important feature (out of 13 features).
+
+Compared to other instances in the data, Age is a not very important feature.
+
+
+
+

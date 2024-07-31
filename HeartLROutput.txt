@@ -1,0 +1,65 @@
+Heart Data - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: number_of_major_vessels_colored_by_flourosopy
+2: thal
+3: Sex
+4: exercise_induced_angina
+5: Chest_Pain_Type
+6: _oldpeak
+7: _resting_electrocardiographic_results
+8: _the_slope_of_the_peak_exercise_ST_segment
+9: fasting_blood_sugar
+10: serum_cholestoral
+11: resting_blood_pressure
+12: maximum_heart_rate_achieved
+13: Age
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (resting_blood_pressure <= 119.0) and (Sex > 0.5) and (maximum_heart_rate_achieved > 144.5) then then the model is incorrect 80.0% over 10 samples
+
+if (resting_blood_pressure > 119.0) and (resting_blood_pressure > 186.0) then then the model is incorrect 100.0% over 1 samples
+
+if (resting_blood_pressure > 119.0) and (resting_blood_pressure <= 186.0) and (maximum_heart_rate_achieved <= 84.0) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 189 given this prediction?
+
+For instances with id equal to 189 predicted presence of heart disease:
+thal is the most important feature and has a positive influence on the predictions
+Sex is the second most important feature and has a positive influence on the predictions
+exercise_induced_angina is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 189 change for a different result?
+
+For instances where id equal to 189, the original prediction is presence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you decrease Age to 69.0 and decrease Chest_Pain_Type to 1.0 and decrease exercise_induced_angina to 0.0 and decrease number_of_major_vessels_colored_by_flourosopy to 0.0, the model will predict absence of heart disease.
+
+In addition, if you decrease Chest_Pain_Type to 1.0 and decrease resting_blood_pressure to 102.0 and decrease _oldpeak to 0.7, the model will predict absence of heart disease.
+
+Also, if you decrease _oldpeak to 1.6 and decrease _the_slope_of_the_peak_exercise_ST_segment to 1.0 and decrease number_of_major_vessels_colored_by_flourosopy to 0.0 and decrease thal to 3.0, the model will predict absence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is age used for predictions?
+
+For the model's predictions across all the data, the Age feature is ranked on average 13.0 (95% CI [13.0, 13.0]). Here, rank 1 is the most important feature (out of 13 features).
+
+Compared to other instances in the data, Age is a not very important feature.
+
+
+
+
