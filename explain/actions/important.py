@@ -58,7 +58,7 @@ def compute_rank_stats(data, feature_name_to_rank):
         # If the feature isn't very important and never
         # ends up getting included
         if len(feature_name_to_rank[feature_name]) == 0:
-            print(feature_name," isn't very important")
+            # print(feature_name," isn't very important")
             continue
 
         max_rank = sorted(rank_to_ids.keys())[0]
@@ -240,8 +240,8 @@ def important_operation(conversation, parse_text, i, **kwargs):
         return_s = topk_feature_importance(avg_ranks, conversation, parse_op, return_s, topk)
     else:
         # Individual feature importance case
-        print("Did we make it here?")
-        print(avg_ranks)
+        # print("Did we make it here?")
+        # print(avg_ranks)
         return_s = individual_feature_importance(avg_ranks,
                                                  conversation,
                                                  ci_95s,

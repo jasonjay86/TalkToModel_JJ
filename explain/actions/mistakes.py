@@ -67,7 +67,7 @@ def typical_mistakes(data, y_true, y_pred, conversation, intro_text, ids):
     else:
         incorrect_vals = y_true != y_pred
         return_options = train_tree(data, incorrect_vals)
-        print("Trained the tree")
+        # print("Trained the tree")
         if len(return_options) == 0:
             return "I couldn't find any patterns for mistakes the model typically makes."
 
@@ -96,13 +96,13 @@ def show_mistakes_operation(conversation, parse_text, i, n_features_to_show=floa
 
     # The filtering text
     intro_text = get_parse_filter_text(conversation)
-    print("Got intro text")
+    # print("Got intro text")
     if len(y_true) == 0:
         return "There are no instances in the data that meet this description.\n\n", 0
 
-    print("about to make prediction")
+    # print("about to make prediction")
     y_pred = model.predict(data)
-    print("made prediction")
+    # print("made prediction")
     if np.sum(y_true == y_pred) == len(y_true):
         if len(y_true) == 1:
             return f"{intro_text} the model predicts correctly!\n\n", 1
