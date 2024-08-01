@@ -43,6 +43,7 @@ xg = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0,
 xg.fit(X_train, y_train)
 print(f"XGBoost Score: {xg.score(X_test, y_test)}")
 
+
 #Logistic Regression
 lr = LogisticRegression(random_state=0,max_iter=10000)
 lr.fit(X_train, y_train)
