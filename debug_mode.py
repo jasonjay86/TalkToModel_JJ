@@ -56,8 +56,8 @@ bot = ExplainBot()
 objective = bot.conversation.describe.get_dataset_objective()
 
 ##### This is the section to update per dataset
-sampleInstance = "672"
-sampleFeature = "A8"
+sampleInstance = "1371"
+sampleFeature = "woman"
 print("Austrailian Credit Data - Random Forest")
 ############################
 

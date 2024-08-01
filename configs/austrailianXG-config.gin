@@ -1,5 +1,5 @@
 ##########################################
-# The new austrailian_modelXG dataset conversation config
+# The new austrailian_model XG dataset conversation config
 ##########################################
 
 # for few shot, e.g., "EleutherAI/gpt-neo-2.7B"

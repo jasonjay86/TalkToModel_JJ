@@ -10,7 +10,11 @@
 # GlobalArgs.config = "./configs/austrailianXG-config.gin"
 # GlobalArgs.config = "./configs/austrailianLR-config.gin"
 # GlobalArgs.config = "./configs/austrailianMLP-config.gin"
-GlobalArgs.config = "./configs/austrailianRF-config.gin"
+# GlobalArgs.config = "./configs/austrailianRF-config.gin"
+# GlobalArgs.config = "./configs/compasXG-config.gin"
+GlobalArgs.config = "./configs/compasLR-config.gin"
+# GlobalArgs.config = "./configs/compasMLP-config.gin"
+# GlobalArgs.config = "./configs/compasRF-config.gin"
 
 # Set the base url to host the demo, if needed
 GlobalArgs.baseurl = "/"

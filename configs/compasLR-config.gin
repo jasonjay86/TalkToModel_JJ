@@ -1,5 +1,5 @@
 ##########################################
-# The new compas XG dataset conversation config
+# The new compas LR dataset conversation config
 ##########################################
 
 # for few shot, e.g., "EleutherAI/gpt-neo-2.7B"
@@ -13,7 +13,7 @@ ExplainBot.skip_prompts = False
 ExplainBot.t5_config = "./parsing/t5/gin_configs/t5-large.gin"
 
 # User provided prediction model file path
-ExplainBot.model_file_path = "./newData/compas_modelXG.pkl"
+ExplainBot.model_file_path = "./newData/compas_modelLR.pkl"
 
 # Seed
 ExplainBot.seed = 0
@@ -23,7 +23,7 @@ ExplainBot.dataset_file_path = "./newData/dataset_compas.csv"
 
 # The background dataset for the conversation
 ExplainBot.background_dataset_file_path = "./newData/background_compas.csv"
-ExplainBot.name = "compasXG"
+ExplainBot.name = "compasLR"
 
 # Dataset feature information
 ExplainBot.dataset_index_column = 0
@@ -38,7 +38,7 @@ ExplainBot.prompt_ordering = "ascending"
 
 # Prompt params
 Prompts.prompt_cache_size = 1_000_000
-Prompts.prompt_cache_location = "./cache/compasXG-prompts.pkl"
+Prompts.prompt_cache_location = "./cache/compasLR-prompts.pkl"
 Prompts.max_values_per_feature = 2
 Prompts.sentence_transformer_model_name = "all-mpnet-base-v2"
 Prompts.prompt_folder = "./explain/prompts"
@@ -49,11 +49,11 @@ Prompts.num_prompt_template = 7
 Explanation.max_cache_size = 1_000_000
 
 # MegaExplainer Params
-MegaExplainer.cache_location = "./cache/compasXG-explainer.pkl"
+MegaExplainer.cache_location = "./cache/compasLR-explainer.pkl"
 MegaExplainer.use_selection = False
 
 # Tabular Dice Params
-TabularDice.cache_location = "./cache/compasXG-dice-tabular.pkl"
+TabularDice.cache_location = "./cache/compasLR-dice-tabular.pkl"
 
 # Conversation params
 Conversation.class_names = {0: "likely to commit a crime", 1: "unlikely to commit a crime"}
@@ -61,7 +61,7 @@ Conversation.class_names = {0: "likely to commit a crime", 1: "unlikely to commi
 # Dataset description
 DatasetDescription.dataset_objective = "predict whether someone will commit a crime"
 DatasetDescription.dataset_description = "recidivism prediction"
-DatasetDescription.model_description = "xgboost"
+DatasetDescription.model_description = "Logisitic Regression"
 
 # Feature definitions
 ExplainBot.feature_definitions = None

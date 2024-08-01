@@ -1,0 +1,66 @@
+Austrailian Credit Data - Random Forest
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a10
+5: a12
+6: a5
+7: a9
+8: a4
+9: a3
+10: a13
+11: a7
+12: a6
+13: a11
+14: a2
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (a13 > 454.5) and (a11 > 0.5) then then the model is incorrect 100.0% over 4 samples
+
+if (a13 <= 454.5) and (a2 > 67.165) and (a10 <= 1.0) then then the model is incorrect 100.0% over 2 samples
+
+if (a13 > 454.5) and (a11 <= 0.5) and (a12 <= 1.5) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 672 given this prediction?
+
+For instances with id equal to 672 predicted bad credit risk:
+a8 is the most important feature and has a positive influence on the predictions
+a14 is the second most important feature and has a negative influence on the predictions
+a10 is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 672 change for a different result?
+
+For instances where id equal to 672, the original prediction is bad credit risk. Here are some options to change the prediction of this instance.
+
+First, if you decrease a3 to 9.49 and increase a8 to 1.0 and increase a10 to 15.0, the model will predict good credit risk.
+
+Also, if you increase a8 to 1.0 and increase a14 to 21353.0, the model will predict good credit risk.
+
+In addition, if you increase a10 to 14.0 and increase a12 to 3.0 and increase a14 to 18992.0, the model will predict good credit risk.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is A8 used for predictions?
+
+For the model's predictions across all the data, the a8 feature is ranked on average 1.0 (95% CI [1.0, 1.0]). Here, rank 1 is the most important feature (out of 14 features).
+
+Compared to other instances in the data, a8 is a highly important feature.
+
+
+
+
