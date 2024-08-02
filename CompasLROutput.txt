@@ -1,0 +1,61 @@
+Compas Data - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: man
+9: woman
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (recidivated <= 0.5) and (numberofpriorcrimes > 8.5) and (age <= 44.5) and (age > 37.5) then then the model is incorrect 75.0% over 8 samples
+
+if (recidivated <= 0.5) and (numberofpriorcrimes > 8.5) and (age > 44.5) and (numberofpriorcrimes > 16.5) then then the model is incorrect 66.67% over 3 samples
+
+if (recidivated > 0.5) and (monthsinjail <= 4.5) and (age > 30.5) and (numberofpriorcrimes > 29.0) then then the model is incorrect 100.0% over 2 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 1371 given this prediction?
+
+For instances with id equal to 1371 predicted unlikely to commit a crime:
+age is the most important feature and has a positive influence on the predictions
+numberofpriorcrimes is the second most important feature and has a negative influence on the predictions
+recidivated is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 1371 change for a different result?
+
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 438, the model will predict likely to commit a crime.
+
+Furthermore, if you increase recidivated to 1.0 and increase monthsinjail to 676, the model will predict likely to commit a crime.
+
+In addition, if you increase monthsinjail to 731, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is woman used for predictions?
+
+For the model's predictions across all the data, the woman feature is ranked on average 8.92 (95% CI [8.906, 8.934]). Here, rank 1 is the most important feature (out of 9 features).
+
+Compared to other instances in the data, woman is a not very important feature.
+
+
+
+

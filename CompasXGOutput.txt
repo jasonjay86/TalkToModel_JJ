@@ -1,0 +1,69 @@
+Compas Data - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: woman
+8: man
+9: felony
+
+--------------------------------------------------------------------------------
+What records does the model predict incorrectly?
+
+For all the instances in the data, the model typically predicts incorrect:
+
+if (numberofpriorcrimes > 4.5) and (age > 30.5) and (numberofpriorcrimes > 8.5) and (monthsinjail > 5.5) and (age <= 44.5) then then the model is incorrect 53.12% over 32 samples
+
+if (numberofpriorcrimes <= 4.5) and (age <= 27.5) and (monthsinjail > 5.5) and (monthsinjail <= 51.5) and (age <= 21.5) then then the model is incorrect 52.0% over 25 samples
+
+if (numberofpriorcrimes <= 4.5) and (age <= 27.5) and (monthsinjail > 5.5) and (monthsinjail > 51.5) and (monthsinjail <= 182.0) then then the model is incorrect 66.67% over 21 samples
+
+if (numberofpriorcrimes > 4.5) and (age <= 30.5) and (numberofpriorcrimes <= 11.5) and (age > 27.5) and (numberofpriorcrimes > 6.5) then then the model is incorrect 76.47% over 17 samples
+
+if (numberofpriorcrimes > 4.5) and (age <= 30.5) and (numberofpriorcrimes > 11.5) and (black <= 0.5) and (age > 27.5) then then the model is incorrect 75.0% over 4 samples
+
+if (numberofpriorcrimes <= 4.5) and (age > 27.5) and (monthsinjail > 27.5) and (recidivated > 0.5) and (age <= 30.5) then then the model is incorrect 100.0% over 3 samples
+
+if (numberofpriorcrimes > 4.5) and (age > 30.5) and (numberofpriorcrimes <= 8.5) and (monthsinjail > 49.0) and (monthsinjail <= 61.5) then then the model is incorrect 100.0% over 2 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Why is instance 1371 given this prediction?
+
+For instances with id equal to 1371 predicted unlikely to commit a crime:
+numberofpriorcrimes is the most important feature and has a negative influence on the predictions
+age is the second most important feature and has a positive influence on the predictions
+recidivated is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+What should instance 1371 change for a different result?
+
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 611, the model will predict likely to commit a crime.
+
+Also, if you increase numberofpriorcrimes to 28 and increase woman to 1.0, the model will predict likely to commit a crime.
+
+Further, if you increase numberofpriorcrimes to 19 and increase monthsinjail to 58, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Is woman used for predictions?
+
+For the model's predictions across all the data, the woman feature is ranked on average 6.94 (95% CI [6.927, 6.953]). Here, rank 1 is the most important feature (out of 9 features).
+
+Compared to other instances in the data, woman is a not very important feature.
+
+
+
+
