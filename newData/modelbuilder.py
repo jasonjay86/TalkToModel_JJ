@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-np.random.seed(10)
+np.random.seed(14)
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
@@ -9,11 +9,11 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
 # Loading + splitting the data
-datasetNm = "austrailian"
+datasetNm = "heart"
 iteration = "Set5"
 data = pd.read_csv("./"+datasetNm+".csv", index_col=None)
 #Need to adjust y  vaule for different datasets
-y = data.pop('A15')
+y = data.pop('A14')
 datasetNm = datasetNm + iteration
 
 
