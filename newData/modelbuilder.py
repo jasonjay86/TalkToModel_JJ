@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-np.random.seed(0)
+np.random.seed(5)
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
@@ -10,9 +10,11 @@ from sklearn.model_selection import train_test_split
 
 # Loading + splitting the data
 datasetNm = "compas"
+iteration = "Set5"
 data = pd.read_csv("./"+datasetNm+".csv", index_col=None)
 #Need to adjust y  vaule for different datasets
 y = data.pop('y')
+datasetNm = datasetNm + iteration
 
 
 # I noticed that having class labels on a range besides 0 ==> N introduces some bugs because of the way certain explanation packages we use handle these labels...
