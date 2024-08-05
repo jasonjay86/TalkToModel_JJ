@@ -1,0 +1,323 @@
+Compas Data - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: woman
+8: man
+9: felony
+
+Compas Data Set 2 - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: black
+4: recidivated
+5: monthsinjail
+6: misdemeanor
+7: man
+8: woman
+9: felony
+
+Compas Data Set 3 - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: misdemeanor
+6: monthsinjail
+7: woman
+8: man
+9: felony
+
+Compas Data Set 4 - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: recidivated
+4: black
+5: monthsinjail
+6: felony
+7: woman
+8: man
+9: misdemeanor
+
+Compas Data Set 5 - xg boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: woman
+8: man
+9: felony
+
+Compas Data - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: man
+9: woman
+
+Compas Data Set 2 - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: man
+9: woman
+
+Compas Data Set 3 - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: woman
+9: man
+
+Compas Data Set 4 - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: woman
+9: man
+
+Compas Data Set 5 - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: woman
+9: man
+
+Compas Data - Multilayer Perceptron
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: misdemeanor
+4: recidivated
+5: felony
+6: woman
+7: black
+8: man
+9: monthsinjail
+
+Compas Data Set 2 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: misdemeanor
+4: recidivated
+5: felony
+6: woman
+7: black
+8: man
+9: monthsinjail
+
+
+Compas Data Set 3 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: misdemeanor
+4: recidivated
+5: felony
+6: black
+7: woman
+8: man
+9: monthsinjail
+
+
+Compas Data Set 4 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: misdemeanor
+4: recidivated
+5: felony
+6: black
+7: woman
+8: man
+9: monthsinjail
+
+
+Compas Data Set 5 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofpriorcrimes
+2: age
+3: misdemeanor
+4: recidivated
+5: felony
+6: black
+7: woman
+8: man
+9: monthsinjail
+
+Compas Data - Random Forest
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: recidivated
+2: age
+3: numberofpriorcrimes
+4: black
+5: monthsinjail
+6: felony
+7: misdemeanor
+8: man
+9: woman
+
+Compas Data Set 2 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: recidivated
+3: numberofpriorcrimes
+4: black
+5: monthsinjail
+6: felony
+7: misdemeanor
+8: man
+9: woman
+
+Compas Data Set 3 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: recidivated
+2: age
+3: numberofpriorcrimes
+4: black
+5: monthsinjail
+6: felony
+7: misdemeanor
+8: man
+9: woman
+
+Compas Data Set 4 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: recidivated
+3: numberofpriorcrimes
+4: black
+5: monthsinjail
+6: felony
+7: misdemeanor
+8: woman
+9: man
+
+Compas Data Set 5 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: recidivated
+3: numberofpriorcrimes
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: man
+9: woman
+

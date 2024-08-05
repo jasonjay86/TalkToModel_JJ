@@ -1,0 +1,145 @@
+Austrailian Credit Data - XG Boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a10
+5: a12
+6: a5
+7: a9
+8: a4
+9: a3
+10: a13
+11: a7
+12: a6
+13: a11
+14: a2
+
+Austrailian Data Set 2 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a10
+5: a5
+6: a4
+7: a7
+8: a13
+9: a12
+10: a3
+11: a11
+12: a6
+13: a2
+14: a9
+
+Austrailian Data Set 3 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a4
+3: a1
+4: a10
+5: a5
+6: a14
+7: a3
+8: a7
+9: a12
+10: a2
+11: a13
+12: a6
+13: a9
+14: a11
+
+Austrailian Data Set 4 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a10
+5: a11
+6: a5
+7: a12
+8: a4
+9: a3
+10: a7
+11: a13
+12: a6
+13: a2
+14: a9
+
+Austrailian Data Set 5 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a4
+5: a10
+6: a5
+7: a3
+8: a6
+9: a2
+10: a7
+11: a12
+12: a13
+13: a11
+14: a9
+
+Austrailian Credit Data - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a5
+5: a4
+6: a9
+7: a10
+8: a13
+9: a12
+10: a7
+11: a2
+12: a3
+13: a6
+14: a11Austrailian Data Set 2 - LR
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a5
+5: a4
+6: a10
+7: a12
+8: a7
+9: a13
+10: a11
+11: a9
+12: a6
+13: a2
+14: a3
+

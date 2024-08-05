@@ -1,4 +1,4 @@
-Austrailian Credit Data - Random Forest
+Austrailian Credit Data - XG Boost
 --------------------------------------------------------------------------------
 What are the most prominent features?
 
