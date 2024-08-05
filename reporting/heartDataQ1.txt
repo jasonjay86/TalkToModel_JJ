@@ -1,0 +1,400 @@
+Heart Data - XG Boost
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: number_of_major_vessels_colored_by_flourosopy
+2: Chest_Pain_Type
+3: Sex
+4: thal
+5: _oldpeak
+6: serum_cholestoral
+7: maximum_heart_rate_achieved
+8: _the_slope_of_the_peak_exercise_ST_segment
+9: exercise_induced_angina
+10: fasting_blood_sugar
+11: _resting_electrocardiographic_results
+12: Age
+13: resting_blood_pressure
+
+Heart Data Set 2 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: numberofmajorvesselscoloredbyflourosopy
+2: thal
+3: sex
+4: theslopeofthepeakexercisestsegment
+5: chestpaintype
+6: exerciseinducedangina
+7: restingbloodpressure
+8: serumcholestoral
+9: maximumheartrateachieved
+10: restingelectrocardiographicresults
+11: age
+12: oldpeak
+13: fastingbloodsugar
+
+Heart Data Set 3 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: numberofmajorvesselscoloredbyflourosopy
+3: sex
+4: chestpaintype
+5: serumcholestoral
+6: fastingbloodsugar
+7: oldpeak
+8: restingbloodpressure
+9: theslopeofthepeakexercisestsegment
+10: maximumheartrateachieved
+11: restingelectrocardiographicresults
+12: exerciseinducedangina
+13: age
+
+Heart Data Set 4 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: numberofmajorvesselscoloredbyflourosopy
+3: chestpaintype
+4: sex
+5: theslopeofthepeakexercisestsegment
+6: serumcholestoral
+7: restingbloodpressure
+8: maximumheartrateachieved
+9: oldpeak
+10: age
+11: fastingbloodsugar
+12: exerciseinducedangina
+13: restingelectrocardiographicresults
+
+Heart Data Set 5 - XG
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: chestpaintype
+2: numberofmajorvesselscoloredbyflourosopy
+3: thal
+4: sex
+5: theslopeofthepeakexercisestsegment
+6: maximumheartrateachieved
+7: restingbloodpressure
+8: oldpeak
+9: serumcholestoral
+10: age
+11: fastingbloodsugar
+12: exerciseinducedangina
+13: restingelectrocardiographicresults
+
+Heart Data - Logistic Regression
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: number_of_major_vessels_colored_by_flourosopy
+2: thal
+3: Sex
+4: exercise_induced_angina
+5: Chest_Pain_Type
+6: _oldpeak
+7: _resting_electrocardiographic_results
+8: _the_slope_of_the_peak_exercise_ST_segment
+9: fasting_blood_sugar
+10: serum_cholestoral
+11: resting_blood_pressure
+12: maximum_heart_rate_achieved
+13: Age
+
+Heart Data Set 2 - LR
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: sex
+3: numberofmajorvesselscoloredbyflourosopy
+4: restingelectrocardiographicresults
+5: exerciseinducedangina
+6: maximumheartrateachieved
+7: chestpaintype
+8: restingbloodpressure
+9: theslopeofthepeakexercisestsegment
+10: fastingbloodsugar
+11: serumcholestoral
+12: oldpeak
+13: age
+
+Heart Data Set 3 - LR
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: sex
+3: numberofmajorvesselscoloredbyflourosopy
+4: fastingbloodsugar
+5: restingelectrocardiographicresults
+6: exerciseinducedangina
+7: chestpaintype
+8: maximumheartrateachieved
+9: restingbloodpressure
+10: oldpeak
+11: serumcholestoral
+12: theslopeofthepeakexercisestsegment
+13: age
+
+Heart Data Set 4 - LR
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: sex
+2: numberofmajorvesselscoloredbyflourosopy
+3: thal
+4: exerciseinducedangina
+5: fastingbloodsugar
+6: chestpaintype
+7: restingbloodpressure
+8: maximumheartrateachieved
+9: theslopeofthepeakexercisestsegment
+10: serumcholestoral
+11: oldpeak
+12: age
+13: restingelectrocardiographicresults
+
+Heart Data Set 5 - LR
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: sex
+3: numberofmajorvesselscoloredbyflourosopy
+4: restingelectrocardiographicresults
+5: exerciseinducedangina
+6: maximumheartrateachieved
+7: chestpaintype
+8: restingbloodpressure
+9: fastingbloodsugar
+10: theslopeofthepeakexercisestsegment
+11: oldpeak
+12: serumcholestoral
+13: age
+
+Heart Data - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: resting_blood_pressure
+2: maximum_heart_rate_achieved
+3: Chest_Pain_Type
+4: fasting_blood_sugar
+5: number_of_major_vessels_colored_by_flourosopy
+6: _resting_electrocardiographic_results
+7: exercise_induced_angina
+8: thal
+9: _the_slope_of_the_peak_exercise_ST_segment
+10: Sex
+11: Age
+12: serum_cholestoral
+13: _oldpeak
+
+Heart Data Set 2 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: restingbloodpressure
+2: maximumheartrateachieved
+3: serumcholestoral
+4: age
+5: numberofmajorvesselscoloredbyflourosopy
+6: restingelectrocardiographicresults
+7: fastingbloodsugar
+8: theslopeofthepeakexercisestsegment
+9: exerciseinducedangina
+10: sex
+11: thal
+12: chestpaintype
+13: oldpeak
+
+Heart Data Set 3 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: maximumheartrateachieved
+3: numberofmajorvesselscoloredbyflourosopy
+4: restingelectrocardiographicresults
+5: sex
+6: exerciseinducedangina
+7: age
+8: fastingbloodsugar
+9: chestpaintype
+10: serumcholestoral
+11: oldpeak
+12: restingbloodpressure
+13: theslopeofthepeakexercisestsegment
+
+Heart Data Set 4 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: restingbloodpressure
+2: serumcholestoral
+3: age
+4: numberofmajorvesselscoloredbyflourosopy
+5: fastingbloodsugar
+6: maximumheartrateachieved
+7: theslopeofthepeakexercisestsegment
+8: chestpaintype
+9: sex
+10: exerciseinducedangina
+11: thal
+12: restingelectrocardiographicresults
+13: oldpeak
+
+Heart Data Set 5 - MLP
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: restingbloodpressure
+2: maximumheartrateachieved
+3: restingelectrocardiographicresults
+4: numberofmajorvesselscoloredbyflourosopy
+5: theslopeofthepeakexercisestsegment
+6: fastingbloodsugar
+7: exerciseinducedangina
+8: serumcholestoral
+9: thal
+10: sex
+11: chestpaintype
+12: age
+13: oldpeak
+
+Heart Data - Random Forest
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: Chest_Pain_Type
+2: number_of_major_vessels_colored_by_flourosopy
+3: thal
+4: Sex
+5: _the_slope_of_the_peak_exercise_ST_segment
+6: _oldpeak
+7: exercise_induced_angina
+8: maximum_heart_rate_achieved
+9: serum_cholestoral
+10: Age
+11: _resting_electrocardiographic_results
+12: fasting_blood_sugar
+13: resting_blood_pressure
+
+Heart Data Set 2 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: numberofmajorvesselscoloredbyflourosopy
+3: chestpaintype
+4: sex
+5: theslopeofthepeakexercisestsegment
+6: exerciseinducedangina
+7: maximumheartrateachieved
+8: oldpeak
+9: restingelectrocardiographicresults
+10: serumcholestoral
+11: restingbloodpressure
+12: age
+13: fastingbloodsugar
+
+Heart Data Set 3 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: chestpaintype
+3: numberofmajorvesselscoloredbyflourosopy
+4: sex
+5: oldpeak
+6: theslopeofthepeakexercisestsegment
+7: exerciseinducedangina
+8: maximumheartrateachieved
+9: restingelectrocardiographicresults
+10: serumcholestoral
+11: age
+12: restingbloodpressure
+13: fastingbloodsugar
+
+Heart Data Set 4 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: numberofmajorvesselscoloredbyflourosopy
+3: sex
+4: chestpaintype
+5: exerciseinducedangina
+6: theslopeofthepeakexercisestsegment
+7: oldpeak
+8: maximumheartrateachieved
+9: serumcholestoral
+10: restingbloodpressure
+11: fastingbloodsugar
+12: age
+13: restingelectrocardiographicresults
+
+Heart Data Set 5 - RF
+--------------------------------------------------------------------------------
+What are the most prominent features?
+
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: thal
+2: numberofmajorvesselscoloredbyflourosopy
+3: sex
+4: chestpaintype
+5: exerciseinducedangina
+6: maximumheartrateachieved
+7: restingelectrocardiographicresults
+8: theslopeofthepeakexercisestsegment
+9: oldpeak
+10: serumcholestoral
+11: age
+12: restingbloodpressure
+13: fastingbloodsugar
+

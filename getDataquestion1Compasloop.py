@@ -50,7 +50,7 @@ args = GlobalArgs()
 
 
 for i in range(2,6):
-    file = "./configs/austrailianLRSet"+str(i)+"-config.gin"
+    file = "./configs/heartRFSet"+str(i)+"-config.gin"
     args.config = file
     # Parse application level configs
     gin.parse_config_file(args.config)
@@ -62,7 +62,7 @@ for i in range(2,6):
     ##### This is the section to update per dataset
     sampleInstance = "1371"
     sampleFeature = "woman"
-    print("Austrailian Data Set "+str(i)+" - LR")
+    print("Heart Data Set "+str(i)+" - RF")
     ############################
 
     print("-"*80)
