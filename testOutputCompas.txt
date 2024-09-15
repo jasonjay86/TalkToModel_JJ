@@ -1,0 +1,245 @@
+Compas Data - xg boost
+--------------------------------------------------------------------------------
+Question 1: What kind of output does the system give?
+ predict [e]
+For all the instances in the data, the model predicts:
+likely to commit a crime, 8.101%
+unlikely to commit a crime, 91.899%
+
+--------------------------------------------------------------------------------
+Question 2: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone will commit a crime. I was trained on a recidivism prediction dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to recidivism prediction.
+
+The exact feature names in the data are listed as follows:
+age
+recidivated
+numberofpriorcrimes
+monthsinjail
+felony
+misdemeanor
+woman
+man
+black
+
+The model scores 84.964% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 3: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone will commit a crime. I was trained on a recidivism prediction dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to recidivism prediction.
+
+The exact feature names in the data are listed as follows:
+age
+recidivated
+numberofpriorcrimes
+monthsinjail
+felony
+misdemeanor
+woman
+man
+black
+
+The model scores 84.964% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 4: What is the sample size of the training data?
+ score accuracy [e]
+The model scores 84.964% accuracy on the all the data.
+
+
+--------------------------------------------------------------------------------
+Question 5: What is the distribution of the training data with with a given feature?
+ previousfilter and statistic target [e]
+For all the instances in the data, the statistics of the labels in the dataset are:
+
+likely to commit a crime: 17.952%
+unlikely to commit a crime: 82.048%
+
+
+--------------------------------------------------------------------------------
+Question 6: How accurate are the predictions?
+ previousfilter and predict [e]
+For all the instances in the data, the model predicts:
+likely to commit a crime, 8.101%
+unlikely to commit a crime, 91.899%
+
+--------------------------------------------------------------------------------
+Question 7: How often does the system make mistakes?
+Exception getting bot response: could not convert string to float: 'unknown'
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 8: In what situations is the system likely to be incorrect?
+ previousfilter and mistake typical [e]
+For all the instances in the data, the model typically predicts incorrect:
+
+if (recidivated <= 0.5) and (numberofpriorcrimes > 8.5) and (age <= 44.5) and (age > 37.5) then then the model is incorrect 75.0% over 8 samples
+
+if (recidivated <= 0.5) and (numberofpriorcrimes > 8.5) and (age > 44.5) and (numberofpriorcrimes > 16.5) then then the model is incorrect 66.67% over 3 samples
+
+if (recidivated > 0.5) and (monthsinjail <= 4.5) and (age > 30.5) and (numberofpriorcrimes > 29.0) then then the model is incorrect 100.0% over 2 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Question 9: How does the system make predictions?
+ predict [e]
+For all the instances in the data, the model predicts:
+likely to commit a crime, 8.101%
+unlikely to commit a crime, 91.899%
+
+--------------------------------------------------------------------------------
+Question 10: What features does the system consider?
+ important all [e]
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+4: black
+5: monthsinjail
+6: misdemeanor
+7: felony
+8: man
+9: woman
+
+--------------------------------------------------------------------------------
+Question 11: What would the system predict if a given feature woman changes to 0?
+ filter id 0 and predict [e]
+There are no instances that meet this description!
+--------------------------------------------------------------------------------
+Question 12: Is feature woman used or not used for the predictions
+ filter woman true and filter man true and filter recidivated false and important topk 1 [e]
+There are no instances that meet this description!
+--------------------------------------------------------------------------------
+Question 13: How should a given feature woman change for instance 1371 to get a different prediction Q?
+ change age increase 1371 and change monthsinjail decrease 1371 and change woman 1 and predict [e]
+For the data with age is increased by 1371.0 and monthsinjail is decreased by 1371.0 and woman is set to 1, the model predicts:
+unlikely to commit a crime, 100.0%
+
+--------------------------------------------------------------------------------
+Question 14: What is the systems overall logic?
+ filter man true and important topk 3 [e]
+For the model's predictions on instance with man equal to true, the top 3 most important features are as follows, where 1 is the most important feature:
+
+1: age
+2: numberofpriorcrimes
+3: recidivated
+
+--------------------------------------------------------------------------------
+Question 15: What features of instance 1371 determine the system’s prediction of it?
+ filter id 1371 and explain cfe [e]
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 438, the model will predict likely to commit a crime.
+
+In addition, if you increase recidivated to 1.0 and increase monthsinjail to 676, the model will predict likely to commit a crime.
+
+Also, if you increase monthsinjail to 731, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 17: Why is  instance 1371 not predicted to be Y?
+ filter id 1371 and explain features [e]
+For instances with id equal to 1371 predicted unlikely to commit a crime:
+age is the most important feature and has a positive influence on the predictions
+numberofpriorcrimes is the second most important feature and has a negative influence on the predictions
+recidivated is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+Question 19: How should instance 1371 change to get a different prediction?
+ filter id 1371 and explain cfe [e]
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 438, the model will predict likely to commit a crime.
+
+In addition, if you increase recidivated to 1.0 and increase monthsinjail to 676, the model will predict likely to commit a crime.
+
+Furthermore, if you increase monthsinjail to 731, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 20: What kind of algorithm is used?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone will commit a crime. I was trained on a recidivism prediction dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to recidivism prediction.
+
+The exact feature names in the data are listed as follows:
+age
+recidivated
+numberofpriorcrimes
+monthsinjail
+felony
+misdemeanor
+woman
+man
+black
+
+The model scores 84.964% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 21: Why is instance 1371 given this prediction?
+ filter id 1371 and explain features [e]
+For instances with id equal to 1371 predicted unlikely to commit a crime:
+age is the most important feature and has a positive influence on the predictions
+numberofpriorcrimes is the second most important feature and has a negative influence on the predictions
+recidivated is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+Question 22: What is the minimum change required for instance 1371 to get a different prediction Q?
+ filter id 1371 and explain cfe [e]
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 438, the model will predict likely to commit a crime.
+
+Further, if you increase recidivated to 1.0 and increase monthsinjail to 676, the model will predict likely to commit a crime.
+
+Further, if you increase monthsinjail to 731, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 23: What kind of instance is predicted outcome Y?
+ previousfilter and predict [e]
+The instance with id equal to 1371 is predicted unlikely to commit a crime.
+
+--------------------------------------------------------------------------------
+Question 24: What is the scope of change permitted for instance 1371 to still get the same prediction?
+ filter id 1371 and explain cfe [e]
+For instances where id equal to 1371, the original prediction is unlikely to commit a crime. Here are some options to change the prediction of this instance.
+
+First, if you increase recidivated to 1.0 and increase monthsinjail to 438, the model will predict likely to commit a crime.
+
+Also, if you increase recidivated to 1.0 and increase monthsinjail to 676, the model will predict likely to commit a crime.
+
+Also, if you increase monthsinjail to 731, the model will predict likely to commit a crime.
+
+If you want some more options, just ask &#129502

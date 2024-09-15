@@ -64,8 +64,8 @@ print("Compas Data Set 2 - Logistic Regression")
 print("-"*80)
 
 # Question 1
-print("What are the most prominent features?\n")
-print(get_bot_response(bot,"What are the most prominent features?","important"))
+# print("What are the most prominent features?\n")
+# print(get_bot_response(bot,"What are the most prominent features?","important"))
 
 # print("-"*80)
 # # Question 2
@@ -77,10 +77,10 @@ print(get_bot_response(bot,"What are the most prominent features?","important"))
 # print("Why is instance " + sampleInstance  + " given this prediction?\n")
 # print(get_bot_response(bot,"Why is instance " + sampleInstance  + " given this prediction?","whatif"))
 
-# print("-"*80)
-# # Question 4
-# print("What should instance " + sampleInstance  + " change for a different result?\n")
-# print(get_bot_response(bot,"What should instance " + sampleInstance  + " change for a different result?","whatif"))
+print("-"*80)
+# Question 4
+print("What should instance " + sampleInstance  + " change for a different result?\n")
+print(get_bot_response(bot,"What should instance " + sampleInstance  + " change for a different result?","whatif"))
 
 # print("-"*80)
 # # Question 5

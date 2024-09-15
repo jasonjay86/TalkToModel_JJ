@@ -1,0 +1,29 @@
+What kind of output does the system give?
+What kind of data was the system trained on?
+What kind of data was the system trained on?
+What is the sample size of the training data?
+What is the distribution of the training data with with a given feature?
+How accurate are the predictions?
+How often does the system make mistakes?
+In what situations is the system likely to be incorrect?
+How does the system make predictions?
+What features does the system consider?
+What would the system predict if a given feature sampleFeature changes to 0?
+Is feature sampleFeature used or not used for the predictions
+How should a given feature sampleFeature change for instance sampleInstance to get a different prediction Q?
+What is the systems overall logic?
+What features of instance sampleInstance determine the system’s prediction of it?
+XWhy are instance sampleInstance and B given the same prediction?
+Why is  instance sampleInstance not predicted to be Y?
+XWhy are instance sampleInstance and B given different predictions?
+How should instance sampleInstance change to get a different prediction?
+What kind of algorithm is used?
+Why is instance sampleInstance given this prediction?
+What is the minimum change required for instance sampleInstance to get a different prediction Q?
+What kind of instance is predicted outcome Y?
+What is the scope of change permitted for instance sampleInstance to still get the same prediction?
+XWhat is the range of values permitted to for a feature sampleFeature for this prediction on Instance sampleInstance to stay the same?
+XWhat would the system predict if instance sampleInstance changes to...?
+XWhat would the system predict for [a different instance A]?
+XWhat does [a machine learning terminology] mean?
+

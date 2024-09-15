@@ -35,6 +35,15 @@ def get_bot_response(BOT, user_text,action):
         response = "Sorry! I couldn't understand that. Could you please try to rephrase?"
     return response
 
+def read_questions_from_file(file_path):
+    questions = []
+    try:
+        with open(file_path, 'r') as file:
+            questions = [line.strip() for line in file if line.strip()]
+    except FileNotFoundError:
+        print(f"The file at {file_path} was not found.")
+    return questions
+
 @gin.configurable
 class GlobalArgs:
     def __init__(self, config, baseurl):
@@ -61,11 +70,24 @@ sampleFeature = "woman"
 print("Compas Data - xg boost")
 ############################
 
-print("-"*80)
 
-# Question 1
-print("What are the most prominent features?\n")
-print(get_bot_response(bot,"What are the most prominent features?","important"))
+
+file_path = 'questions.txt'  # Replace with your .txt file path
+questions = read_questions_from_file(file_path)
+
+# Output the questions
+for i, question in enumerate(questions, start=1):
+    question = question.strip()
+    if not question.startswith("X"):
+        print("-"*80)
+        question = question.replace("sampleInstance",sampleInstance)
+        question = question.replace("sampleFeature",sampleFeature)
+        print(f"Question {i}: {question}")
+        print(get_bot_response(bot,question,"important"))
+
+# # Question 1
+# print("What are the most prominent features?\n")
+# print(get_bot_response(bot,"What are the most prominent features?","important"))
 
 # print("-"*80)
 # # Question 2

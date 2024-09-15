@@ -432,7 +432,7 @@ class ExplainBot:
         # Run the action in the conversation corresponding to the formal grammar
         returned_item = run_action(
             user_session_conversation, parse_tree, parsed_text)
-        # print(returned_item)
+        print(parsed_text)
         username = user_session_conversation.username
 
         response_id = self.gen_almost_surely_unique_id()
