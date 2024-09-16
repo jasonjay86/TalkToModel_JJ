@@ -65,9 +65,9 @@ bot = ExplainBot()
 objective = bot.conversation.describe.get_dataset_objective()
 
 ##### This is the section to update per dataset
-sampleInstance = "1371"
-sampleFeature = "woman"
-print("Compas Data - xg boost")
+sampleInstance = "101"
+sampleFeature = "number_of_major_vessels_colored_by_flourosopy"
+print("heart Data - LR")
 ############################
 
 

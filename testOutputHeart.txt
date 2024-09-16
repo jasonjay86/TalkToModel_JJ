@@ -1,0 +1,261 @@
+heart Data - LR
+--------------------------------------------------------------------------------
+Question 1: What kind of output does the system give?
+ predict [e]
+For all the instances in the data, the model predicts:
+absence of heart disease, 57.353%
+presence of heart disease, 42.647%
+
+--------------------------------------------------------------------------------
+Question 2: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone has heart disease. I was trained on a heart disease dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to heart disease.
+
+The exact feature names in the data are listed as follows:
+Age
+Sex
+Chest_Pain_Type
+resting_blood_pressure
+serum_cholestoral
+fasting_blood_sugar
+_resting_electrocardiographic_results
+maximum_heart_rate_achieved
+exercise_induced_angina
+_oldpeak
+_the_slope_of_the_peak_exercise_ST_segment
+number_of_major_vessels_colored_by_flourosopy
+thal
+
+The model scores 77.941% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 3: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone has heart disease. I was trained on a heart disease dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to heart disease.
+
+The exact feature names in the data are listed as follows:
+Age
+Sex
+Chest_Pain_Type
+resting_blood_pressure
+serum_cholestoral
+fasting_blood_sugar
+_resting_electrocardiographic_results
+maximum_heart_rate_achieved
+exercise_induced_angina
+_oldpeak
+_the_slope_of_the_peak_exercise_ST_segment
+number_of_major_vessels_colored_by_flourosopy
+thal
+
+The model scores 77.941% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 4: What is the sample size of the training data?
+ score accuracy [e]
+The model scores 77.941% accuracy on the all the data.
+
+
+--------------------------------------------------------------------------------
+Question 5: What is the distribution of the training data with with a given feature?
+ previousfilter and statistic target [e]
+For all the instances in the data, the statistics of the labels in the dataset are:
+
+absence of heart disease: 58.824%
+presence of heart disease: 41.176%
+
+
+--------------------------------------------------------------------------------
+Question 6: How accurate are the predictions?
+ previousfilter and predict [e]
+For all the instances in the data, the model predicts:
+absence of heart disease, 57.353%
+presence of heart disease, 42.647%
+
+--------------------------------------------------------------------------------
+Question 7: How often does the system make mistakes?
+ score accuracy [e]
+The model scores 77.941% accuracy on the all the data.
+
+
+--------------------------------------------------------------------------------
+Question 8: In what situations is the system likely to be incorrect?
+ previousfilter and mistake typical [e]
+For all the instances in the data, the model typically predicts incorrect:
+
+if (resting_blood_pressure <= 119.0) and (Sex > 0.5) and (maximum_heart_rate_achieved > 144.5) then then the model is incorrect 80.0% over 10 samples
+
+if (resting_blood_pressure > 119.0) and (maximum_heart_rate_achieved > 84.0) and (maximum_heart_rate_achieved > 194.5) then then the model is incorrect 100.0% over 1 samples
+
+if (resting_blood_pressure > 119.0) and (maximum_heart_rate_achieved <= 84.0) then then the model is incorrect 100.0% over 1 samples
+
+
+
+
+--------------------------------------------------------------------------------
+Question 9: How does the system make predictions?
+ predict [e]
+For all the instances in the data, the model predicts:
+absence of heart disease, 57.353%
+presence of heart disease, 42.647%
+
+--------------------------------------------------------------------------------
+Question 10: What features does the system consider?
+ important all [e]
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: number_of_major_vessels_colored_by_flourosopy
+2: thal
+3: Sex
+4: exercise_induced_angina
+5: Chest_Pain_Type
+6: _oldpeak
+7: _resting_electrocardiographic_results
+8: _the_slope_of_the_peak_exercise_ST_segment
+9: fasting_blood_sugar
+10: serum_cholestoral
+11: resting_blood_pressure
+12: maximum_heart_rate_achieved
+13: Age
+
+--------------------------------------------------------------------------------
+Question 11: What would the system predict if a given feature number_of_major_vessels_colored_by_flourosopy changes to 0?
+ change number_of_major_vessels_colored_by_flourosopy 0 and predict [e]
+For the data with number_of_major_vessels_colored_by_flourosopy is set to 0, the model predicts:
+absence of heart disease, 67.647%
+presence of heart disease, 32.353%
+
+--------------------------------------------------------------------------------
+Question 12: Is feature number_of_major_vessels_colored_by_flourosopy used or not used for the predictions
+Exception getting bot response: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 13: How should a given feature number_of_major_vessels_colored_by_flourosopy change for instance 101 to get a different prediction Q?
+Exception getting bot response: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 14: What is the systems overall logic?
+ model [e]
+I use a Logistic Regression model to predict whether someone has heart disease.
+
+
+--------------------------------------------------------------------------------
+Question 15: What features of instance 101 determine the system’s prediction of it?
+ filter id 101 and explain cfe [e]
+For instances where id equal to 101, the original prediction is absence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you increase _resting_electrocardiographic_results to 2.0 and increase _oldpeak to 1.4, the model will predict presence of heart disease.
+
+Also, if you increase _oldpeak to 3.5 and increase thal to 6.0, the model will predict presence of heart disease.
+
+Further, if you increase _oldpeak to 3.6 and increase thal to 6.0, the model will predict presence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 17: Why is  instance 101 not predicted to be Y?
+ filter id 101 and explain features [e]
+For instances with id equal to 101 predicted absence of heart disease:
+number_of_major_vessels_colored_by_flourosopy is the most important feature and has a positive influence on the predictions
+Chest_Pain_Type is the second most important feature and has a negative influence on the predictions
+thal is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+Question 19: How should instance 101 change to get a different prediction?
+ filter id 101 and explain cfe [e]
+For instances where id equal to 101, the original prediction is absence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you increase _resting_electrocardiographic_results to 2.0 and increase _oldpeak to 1.4, the model will predict presence of heart disease.
+
+In addition, if you increase _oldpeak to 3.5 and increase thal to 6.0, the model will predict presence of heart disease.
+
+Furthermore, if you increase _oldpeak to 3.6 and increase thal to 6.0, the model will predict presence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 20: What kind of algorithm is used?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone has heart disease. I was trained on a heart disease dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to heart disease.
+
+The exact feature names in the data are listed as follows:
+Age
+Sex
+Chest_Pain_Type
+resting_blood_pressure
+serum_cholestoral
+fasting_blood_sugar
+_resting_electrocardiographic_results
+maximum_heart_rate_achieved
+exercise_induced_angina
+_oldpeak
+_the_slope_of_the_peak_exercise_ST_segment
+number_of_major_vessels_colored_by_flourosopy
+thal
+
+The model scores 77.941% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 21: Why is instance 101 given this prediction?
+ filter id 101 and explain features [e]
+For instances with id equal to 101 predicted absence of heart disease:
+number_of_major_vessels_colored_by_flourosopy is the most important feature and has a positive influence on the predictions
+Chest_Pain_Type is the second most important feature and has a negative influence on the predictions
+thal is the third most important feature and has a positive influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+Question 22: What is the minimum change required for instance 101 to get a different prediction Q?
+ previousfilter and explain cfe [e]
+For instances where id equal to 101, the original prediction is absence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you increase _resting_electrocardiographic_results to 2.0 and increase _oldpeak to 1.4, the model will predict presence of heart disease.
+
+Also, if you increase _oldpeak to 3.5 and increase thal to 6.0, the model will predict presence of heart disease.
+
+Further, if you increase _oldpeak to 3.6 and increase thal to 6.0, the model will predict presence of heart disease.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 23: What kind of instance is predicted outcome Y?
+ previousfilter and predict [e]
+The instance with id equal to 101 is predicted absence of heart disease.
+
+--------------------------------------------------------------------------------
+Question 24: What is the scope of change permitted for instance 101 to still get the same prediction?
+ filter id 101 and explain cfe [e]
+For instances where id equal to 101, the original prediction is absence of heart disease. Here are some options to change the prediction of this instance.
+
+First, if you increase _resting_electrocardiographic_results to 2.0 and increase _oldpeak to 1.4, the model will predict presence of heart disease.
+
+Furthermore, if you increase _oldpeak to 3.5 and increase thal to 6.0, the model will predict presence of heart disease.
+
+Furthermore, if you increase _oldpeak to 3.6 and increase thal to 6.0, the model will predict presence of heart disease.
+
+If you want some more options, just ask &#129502

@@ -1,0 +1,247 @@
+austrailian Data - LR
+--------------------------------------------------------------------------------
+Question 1: What kind of output does the system give?
+ predict [e]
+For all the instances in the data, the model predicts:
+bad credit risk, 56.069%
+good credit risk, 43.931%
+
+--------------------------------------------------------------------------------
+Question 2: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone is good or bad credit risk. I was trained on a credit risk dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to credit risk.
+
+The exact feature names in the data are listed as follows:
+a1
+a2
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+a10
+a11
+a12
+a13
+a14
+
+The model scores 87.283% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 3: What kind of data was the system trained on?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone is good or bad credit risk. I was trained on a credit risk dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to credit risk.
+
+The exact feature names in the data are listed as follows:
+a1
+a2
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+a10
+a11
+a12
+a13
+a14
+
+The model scores 87.283% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 4: What is the sample size of the training data?
+ score accuracy [e]
+The model scores 87.283% accuracy on the all the data.
+
+
+--------------------------------------------------------------------------------
+Question 5: What is the distribution of the training data with with a given feature?
+ previousfilter and statistic target [e]
+For all the instances in the data, the statistics of the labels in the dataset are:
+
+bad credit risk: 54.913%
+good credit risk: 45.087%
+
+
+--------------------------------------------------------------------------------
+Question 6: How accurate are the predictions?
+ previousfilter and predict [e]
+For all the instances in the data, the model predicts:
+bad credit risk, 56.069%
+good credit risk, 43.931%
+
+--------------------------------------------------------------------------------
+Question 7: How often does the system make mistakes?
+ score accuracy [e]
+The model scores 87.283% accuracy on the all the data.
+
+
+--------------------------------------------------------------------------------
+Question 8: In what situations is the system likely to be incorrect?
+ filter a4 1 and filter a6 1 and filter a9 1 and filter a9 false and mistake typical [e]
+There are no instances in the data that meet this description.
+
+
+--------------------------------------------------------------------------------
+Question 9: How does the system make predictions?
+ predict [e]
+For all the instances in the data, the model predicts:
+bad credit risk, 56.069%
+good credit risk, 43.931%
+
+--------------------------------------------------------------------------------
+Question 10: What features does the system consider?
+ important all [e]
+For the model's predictions across all the data, the importance of the features have the following ranking, where 1 is the most important feature:
+
+1: a8
+2: a1
+3: a14
+4: a5
+5: a4
+6: a9
+7: a10
+8: a13
+9: a12
+10: a7
+11: a2
+12: a3
+13: a6
+14: a11
+
+--------------------------------------------------------------------------------
+Question 11: What would the system predict if a given feature A5 changes to 0?
+Exception getting bot response: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 12: Is feature A5 used or not used for the predictions
+Exception getting bot response: could not convert string to float: 'unknown'
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 13: How should a given feature A5 change for instance 474 to get a different prediction Q?
+Exception getting bot response: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 14: What is the systems overall logic?
+Exception getting bot response: could not convert string to float: 'unknown'
+Sorry! I couldn't understand that. Could you please try to rephrase?
+--------------------------------------------------------------------------------
+Question 15: What features of instance 474 determine the system’s prediction of it?
+ filter id 474 and explain cfe [e]
+For instances where id equal to 474, the original prediction is bad credit risk. Here are some options to change the prediction of this instance.
+
+First, if you increase a14 to 22641.0, the model will predict good credit risk.
+
+In addition, if you increase a13 to 1854.0 and increase a14 to 20442.0, the model will predict good credit risk.
+
+In addition, if you increase a7 to 11.9 and increase a14 to 9134.0, the model will predict good credit risk.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 17: Why is  instance 474 not predicted to be Y?
+ filter id 474 and explain features [e]
+For instances with id equal to 474 predicted bad credit risk:
+a8 is the most important feature and has a positive influence on the predictions
+a14 is the second most important feature and has a negative influence on the predictions
+a5 is the third most important feature and has a negative influence on the predictions
+
+I can provide a more comprehensive overview of how important different features in the data are for the model's predictions, just ask for more description &#129502
+--------------------------------------------------------------------------------
+Question 19: How should instance 474 change to get a different prediction?
+ filter id 474 and explain cfe [e]
+For instances where id equal to 474, the original prediction is bad credit risk. Here are some options to change the prediction of this instance.
+
+First, if you increase a14 to 22641.0, the model will predict good credit risk.
+
+In addition, if you increase a13 to 1854.0 and increase a14 to 20442.0, the model will predict good credit risk.
+
+Further, if you increase a7 to 11.9 and increase a14 to 9134.0, the model will predict good credit risk.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 20: What kind of algorithm is used?
+ self and function and data [e]
+I'm a machine learning model trained to predict whether someone is good or bad credit risk. I was trained on a credit risk dataset.
+
+I can answer questions about the model's predictions on the data. For example, I could tell you why certain predictions were made, how likely different outcomes are, what needs to happen to get different predictions, or what would happen to the predictions if the features changed in a particular way.
+
+ I can perform these analyses on individual instances (i.e., using the instance id) or entire subgroups in the data.
+
+If you want to see whether I can do something, try asking it!The data contains information related to credit risk.
+
+The exact feature names in the data are listed as follows:
+a1
+a2
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+a10
+a11
+a12
+a13
+a14
+
+The model scores 87.283% accuracy on the data.
+
+Let me know if you want to see an in depth description of the dataset statistics.
+
+
+--------------------------------------------------------------------------------
+Question 21: Why is instance 474 given this prediction?
+ filter id 474 and explain cfe [e]
+For instances where id equal to 474, the original prediction is bad credit risk. Here are some options to change the prediction of this instance.
+
+First, if you increase a14 to 22641.0, the model will predict good credit risk.
+
+In addition, if you increase a13 to 1854.0 and increase a14 to 20442.0, the model will predict good credit risk.
+
+Further, if you increase a7 to 11.9 and increase a14 to 9134.0, the model will predict good credit risk.
+
+If you want some more options, just ask &#129502
+--------------------------------------------------------------------------------
+Question 22: What is the minimum change required for instance 474 to get a different prediction Q?
+ filter a4 2 and change a14 set 474 and predict [e]
+For the data with a4 equal to 2 and a14 is set to 474.0, the model predicts:
+bad credit risk, 49.194%
+good credit risk, 50.806%
+
+--------------------------------------------------------------------------------
+Question 23: What kind of instance is predicted outcome Y?
+ previousfilter and predict [e]
+For the data with a4 equal to 2 and a14 is set to 474.0, the model predicts:
+bad credit risk, 49.194%
+good credit risk, 50.806%
+
+--------------------------------------------------------------------------------
+Question 24: What is the scope of change permitted for instance 474 to still get the same prediction?
+ filter a14 less than 474 and change a14 set 474 and predict [e]
+For the data with a14 less than 474.0 and a14 is set to 474.0, the model predicts:
+bad credit risk, 65.873%
+good credit risk, 34.127%
+
